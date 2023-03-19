@@ -4,7 +4,7 @@ PyCavator is a Python-based tool that can be used to send and receive data using
 
 ## Usage
 
-```bash
+```txt
 usage: PyCavator.py [-h] [-l] [-f FILE] [-d ADDRESS] [-s ADDRESS] [-p PROTOCOL] [-w WRITE] [-o FOLDER]
                     [--merge] [-x PREFIX] [-a START_SUFFIX] [-b END_SUFFIX] [-e EXTENSION]
 
