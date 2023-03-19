@@ -69,7 +69,15 @@ This tool is intended for authorized/legitimate red teaming and pentesting activ
 
 ## License
 
-This project is licensed under the Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0) license. This means that you are free to share and distribute the original work with proper attribution to the original author, but you may not modify the work or use it for commercial purposes. Additionally, any new versions of the work must be distributed under the same license and with proper attribution to the original author. See the [LICENSE](LICENSE) file for details.
+This project is licensed under the Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0) license.
+
+Under the CC BY-NC-SA 4.0 license, users are allowed to fork, modify, and distribute the project, as long as they follow the license terms.
+
+Users can fork the project to create their own version, and modify it to suit their needs, as long as they distribute their modified version under the same license terms and under the same name. If they want to distribute their modified version under a different name, they would need to seek permission from the original creator.
+
+Users can also submit pull requests to the original repository with their modifications, and the original creator can choose to accept or reject those changes. If the changes are accepted, the modified version will still need to be distributed under the same license terms and under the same name.
+
+It's important to note that the CC BY-NC-SA 4.0 license prohibits commercial use of the project without explicit permission from the original creator. This means that if someone wants to use the project or a modified version of it for commercial purposes, they would need to obtain permission from the original creator to do so. See the [LICENSE](LICENSE) file for details.
 
 
 
