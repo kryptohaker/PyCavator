@@ -8,6 +8,17 @@ import random
 import base64
 import time
 
+banner = '''
+###############################################################
+#                                                             #
+#              PyCavator - Data Exfiltration                  #
+#                                                             #
+#                 Created by: Kryptohaker                     #
+#                                                             #
+###############################################################
+'''
+print(banner)
+
 # icmp_exfiltration
 def checksum(data):
     """Calculate the Internet Checksum of the supplied data"""
