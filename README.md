@@ -1,6 +1,6 @@
 # PyCavator
 
- PyCavator.py is a Python tool that can be used to exfiltrate data over a network based on a defined protocol. It can send and receive data using ICMP packets.
+PyCavator is a Python-based tool that can be used to send and receive data using ICMP packets. The tool can be used for authorized red teaming and penetration testing activities or educational purposes. It provides a sender mode to exfiltrate data from a file and a listener mode to receive incoming data and save it in chunks or to a single file. The tool also includes a merge mode to merge output files with part numbers in the specified range. With PyCavator, users can easily exfiltrate or receive data using ICMP packets in a secure and efficient manner.
 
 ## Usage
 
