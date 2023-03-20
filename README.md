@@ -55,7 +55,7 @@ python pycavator-https.py -l -s 192.168.1.100 -p 4443 -pb cert.pem -pk key.pem -
 PyCavator requires Python 3 to be installed. To install PyCavator, clone the repository and install the required Python modules:
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/PyCavator.git
+git clone https://github.com/kryptohaker/PyCavator.git
 cd PyCavator
 pip install -r requirements.txt
 ```
