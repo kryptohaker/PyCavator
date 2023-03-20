@@ -11,7 +11,7 @@ With PyCavator, users can easily exfiltrate or receive data using ICMP packets i
 ### ICMP 
 
 <b>Required libraries:</b><br/>
-- `argparse`: used for parsing command-line arguments<br/>
+- All libraries are part of the default Python installation.<br/>
 
 #### Examples:
   <b>Sender mode: exfiltrate data from a file</b><br/>
@@ -34,7 +34,6 @@ python pycavator-icmp.py --merge -x output -a 1 -b 10 -e txt -o output_folder
 ### HTTPS 
 
 <b>Required libraries:</b><br/>
-- `argparse`: used for parsing command-line arguments<br/>
 - `requests`: used for sending HTTP requests<br/>
 - `Flask`: used for creating the web server<br/>
 - `ssl`: used for configuring SSL/TLS encryption<br/>
