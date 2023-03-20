@@ -8,7 +8,7 @@ With PyCavator, users can easily exfiltrate or receive data using ICMP packets i
 
 ## Usage
 
-### ICMP mode
+### ICMP 
 
 <b>Required libraries:</b><br/>
 - All libraries are part of the default Python installation.<br/>
@@ -31,7 +31,7 @@ python pycavator-icmp.py -l -s 192.168.1.100 -w s -o output_folder
 python pycavator-icmp.py --merge -x output -a 1 -b 10 -e txt -o output_folder
 ```
 
-### HTTPS mode
+### HTTPS 
 
 <b>Required libraries:</b><br/>
 - `argparse`: used for parsing command-line arguments<br/>
