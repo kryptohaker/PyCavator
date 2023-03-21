@@ -86,7 +86,7 @@ Sign the CSR to create a digital certificate:
 ```bash
 openssl x509 -req -days 1 -in csr.pem -signkey key.pem -out cert.pem
 ```
-This command uses the private key stored in the `key.pem` file to sign the CSR stored in the `csr.pem` file, and saves the resulting digital certificate to a file named `cert.pem`. The `-days 1` option sets the validity period of the certificate to one day.
+This command uses the private key stored in the `key.pem` file to sign the CSR stored in the `csr.pem` file, and saves the resulting digital certificate to a file named `cert.pem` (is the output file that contains the public key). The `-days 1` option sets the validity period of the certificate to one day.
 
 Display the contents of the certificate:
 ```bash
