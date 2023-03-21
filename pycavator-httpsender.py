@@ -78,7 +78,7 @@ def main():
         exit(1)
 
     if not args.input_file or not args.dst_addr or not args.port or not args.token:
-        print("Missing required arguments for sender mode. Please provide input file (-f), destination address (-d), authorization token (-t), and destination port (-p)")
+        print("Missing required arguments for sender mode. Please provide input file (-f), destination address (-d), authorization token (-t) and destination port (-p)")
         exit()
     send_data_https(args) 
         
