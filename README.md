@@ -119,7 +119,7 @@ This tool is intended for authorized/legitimate red teaming and pentesting activ
 
 ## License
 
-This project is licensed under the Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0) Public License. This means that you are free to share and distribute the original work with proper attribution to the original author, but you may not use it for commercial purposes. Additionally, any new versions of the work must be distributed under the same license and with proper attribution to the original author. See the [LICENSE](LICENSE) file for details.
+This project is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0). This means that you are free to share and distribute the original work with proper attribution to the original author, but you may not use it for commercial purposes. Additionally, any new versions of the work must be distributed under the same license and with proper attribution to the original author. See the [LICENSE](LICENSE) file for details.
 
 
 
