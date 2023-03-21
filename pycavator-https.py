@@ -56,7 +56,7 @@ def receive_data_https(args):
     received_chunks = {}
     src_addr = args.src_addr
     
-    # Check if 'data' folder exists, create it if it doesn't
+    # Check if 'output' folder exists, create it if it doesn't
     output_folder = args.output_folder
     output_folder = 'output' if not output_folder else output_folder
     if not os.path.exists(output_folder):
@@ -131,12 +131,12 @@ def main():
 
     if args.listen:
         if not args.src_addr or not args.token or not args.port or not args.key_file or not args.cert_file:
-            print("Missing required arguments for listener mode. Please provide source address (-s), authorization token (-t), listening port (-P), path to private (-pk) and public key (-pb) certificate file.")
+            print("Missing required arguments for listener mode. Please provide source address (-s), authorization token (-t), listening port (-p), path to private (-pk) and public key (-pb) certificate file.")
             exit()
         receive_data_https(args)
     else:
         if not args.input_file or not args.dst_addr or not args.port or not args.token or not args.ca_file:
-            print("Missing required arguments for sender mode. Please provide input file (-f) and destination address (-d), authorization token (-t), destination port (-P) and ath to CA (-ca) file.")
+            print("Missing required arguments for sender mode. Please provide input file (-f), destination address (-d), authorization token (-t), destination port (-p) and path to CA (-ca) file.")
             exit()
         send_data_https(args)        
 
