@@ -6,6 +6,19 @@ It provides a sender mode to exfiltrate data from a file and a listener mode to 
 The tool also includes a merge mode to merge output files with part numbers in the specified range. 
 With PyCavator, users can easily exfiltrate or receive data using ICMP/HTTPS packets in a secure and efficient manner.
 
+- [PyCavator](#pycavator)
+  * [Installation](#installation)
+  * [Usage](#usage)
+    + [ICMP](#icmp)
+      - [Examples:](#examples-)
+    + [HTTPS](#https)
+      - [Examples:](#examples--1)
+      - [Generating a Key, CSR, and Certificate with OpenSSL](#generating-a-key--csr--and-certificate-with-openssl)
+        * [Steps](#steps)
+  * [How to Contribute](#how-to-contribute)
+  * [Disclaimer](#disclaimer)
+  * [License](#license)
+
 ## Installation
 
 PyCavator requires Python 3 to be installed. To install PyCavator, clone the repository and install the required Python modules:
