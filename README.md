@@ -126,7 +126,7 @@ This command copies the contents of the `cert.pem` file to a new file named `ca.
 ```bash
   python pycavator-dns.py -l -s 192.168.1.101 -p 53 -o /tmp
 ```  
->Note: Once file has been sent, use CTRL+C in listener mode to exit and save. 
+>Note: Once file has been sent, use `CTRL+C` in listener mode to exit and save. 
 
 ### UDP
 
