@@ -53,7 +53,6 @@ python pycavator-icmp.py --merge -x output -a 1 -b 10 -e txt -o output_folder
 <b>Required libraries:</b><br/>
 - `requests`: used for sending HTTP requests<br/>
 - `Flask`: used for creating the web server<br/>
-- `ssl`: used for configuring SSL/TLS encryption<br/>
 - `urllib3`: used for disabling SSL warnings<br/>
 
 #### Examples:
