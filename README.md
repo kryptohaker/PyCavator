@@ -1,10 +1,6 @@
 # PyCavator
 
-PyCavator is a Python-based tool that can be used to send and receive data using ICMP/HTTPS packets. 
-The tool can be used for authorized red teaming and penetration testing activities or educational purposes. 
-It provides a sender mode to exfiltrate data from a file and a listener mode to receive incoming data and save it in chunks or to a single file. 
-The tool also includes a merge mode to merge output files with part numbers in the specified range. 
-With PyCavator, users can easily exfiltrate or receive data using ICMP/HTTPS packets in a secure and efficient manner.
+PyCavator is a versatile Python-based tool designed for authorized red teaming, penetration testing activities, and educational purposes. It provides a simple and efficient way to send and receive data through various network protocols. The tool features a sender mode for data exfiltration and a listener mode for receiving incoming data, which can be saved in chunks or as a single file. With its flexibility and ease of use, PyCavator streamlines secure data transfer during cybersecurity assessments.
 
 - [PyCavator](#pycavator)
   * [Installation](#installation)
