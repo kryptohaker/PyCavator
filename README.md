@@ -109,9 +109,7 @@ This command copies the contents of the `cert.pem` file to a new file named `ca.
 
 ### DNS
 <b>Required libraries:</b><br/>
-- dns.query<br/>
-- dns.message<br/>
-- dns.resolver<br/>
+- dnspython
 
 #### Examples:
 <b>Sender mode: exfiltrate data from a file:</b>
